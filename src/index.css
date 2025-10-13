@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --background-color:rgb(8,8,8);
+  --black-color: rgb(0,0,0);
+  --yellow-color:rgb(252,176,23);
+  --text-color: rgb(154,154,154);
+}
