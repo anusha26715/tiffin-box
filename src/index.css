@@ -3,11 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  color:var(--text-color);
+}
+
+body{
+  overflow-x:hidden !important;
+  width:100vw !important;
 }
 
 :root{
   --background-color:rgb(8,8,8);
   --black-color: rgb(0,0,0);
+  --transparent-black: rgb(24,24,24);
   --yellow-color:rgb(252,176,23);
+  --orange-color:rgb(255, 128, 0);
   --text-color: rgb(154,154,154);
+  --text-grey:rgb(99, 98, 98);
 }

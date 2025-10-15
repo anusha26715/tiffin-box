@@ -1,0 +1,42 @@
+.fo-btn{
+    background-color:var(--yellow-color);
+    border:none;
+    color:var(--black-color);
+    font-weight:500;
+    padding:10px 25px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.fo-btn i{
+    display:inline-block;
+    margin-left:10px;
+    font-weight:700;
+    transition: all 0.3s ease-in-out;
+}
+
+.f-btn:hover{
+    background-color:var(--text-color);
+}
+
+.o-btn:hover{
+    background-color:var(--yellow-color);
+    color:var(--black-color) !important;
+}
+
+.o-btn:hover i{
+    color:var(--black-color) !important;
+}
+
+.fo-btn:hover i{
+    transform: translateX(8px);
+}
+
+.f-btn,.f-btn i{
+    color:var(--black-color);
+}
+
+.o-btn{
+    background-color:transparent;
+    transition: all 0.3s ease-in-out;
+}

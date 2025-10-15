@@ -1,0 +1,93 @@
+.menu-section{
+    background-color:var(--black-color);
+    padding:70px 5%;
+}
+
+@media (max-width: 768px) {
+    .menu-section {
+        padding: 20px 0;
+    }
+    .menu-container {
+        padding: 20px 0;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .menu-container::before {
+        width: 90vw;
+        height: 90vw;
+        max-width: 100vw;
+    }
+    .dish-image {
+        max-width: 100vw;
+        width: 100%;
+    }
+}
+
+
+.head{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.menu-heading{
+    max-width:800px;
+}
+
+.menu-container{
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+}
+
+.menu-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background-image: url('../../../../public/logo-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.2; /* faintness level */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  filter: grayscale(1) invert(1) brightness(2);
+  pointer-events: none; 
+}
+
+.dish-slide{
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 35%;
+}
+
+.dish-slide:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dish-image{
+    width:100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish-image:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.dish-name{
+    text-align:center;
+    margin-top:10px;
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+.dish-price{
+    text-align:center;
+    font-weight:700;
+    margin-top:5px;
+}

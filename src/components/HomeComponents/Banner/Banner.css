@@ -1,0 +1,28 @@
+.banner-section{
+    background-color:var(--black-color);
+    padding:70px 10%;
+    position:relative;
+}
+
+
+.banner-img{
+    width: 75%;
+    background:linear-gradient(to right,var(--black-color),var(--transparent-black));
+    padding:5%;
+    border-radius:50%;
+}
+
+.social-media-icons{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:5%;
+}
+
+.social-media-icons i{
+    font-size:25px;
+    cursor:pointer;
+}

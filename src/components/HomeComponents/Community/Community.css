@@ -1,0 +1,8 @@
+.community-section {
+    background-color: var(--black-color);
+    padding: 70px 5%;
+}
+
+.community-img {
+    flex: 0 0 60%;
+}

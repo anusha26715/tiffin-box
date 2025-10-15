@@ -1,0 +1,37 @@
+.testimonial-section{
+    background-color:var(--black-color);
+    padding:70px 5%;
+}
+
+.star-container{
+    margin-bottom:20px;
+}
+
+.author-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.author-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.author-timestamp{
+    margin-bottom:0;
+}

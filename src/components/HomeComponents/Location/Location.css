@@ -1,0 +1,8 @@
+.location-section {
+    background-color: var(--black-color);
+    padding: 70px 5%;
+}
+
+.location-img{
+    flex :0 0 60%;
+}
