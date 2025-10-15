@@ -8,49 +8,49 @@ const Menu = () => {
         {
             id: 1,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
          {
             id: 2,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
          {
             id: 3,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
          {
             id: 4,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
          {
             id: 5,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
         {
             id: 6,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
         {
             id: 7,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         },
         {
             id: 8,
             name:"Chicken Tandoori",
-            image:"../../../public/dish-img.webp",
+            image:"/dish-img.webp",
             price: "$12.99"
         }
     ]

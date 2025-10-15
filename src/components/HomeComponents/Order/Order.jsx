@@ -14,7 +14,7 @@ const Order = () => {
                         <Outline text="Order Online" color="var(--text-color)" />
                     </div>
                     <div className="col-12 col-lg-6 order-img-container">
-                        <img src="../../../public/tiffin-box-img.png" alt="Order Online" className="order-img" />
+                        <img src="/tiffin-box-img.png" alt="Order Online" className="order-img" />
                     </div>
                 </div>
             </div>
