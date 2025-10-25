@@ -5,7 +5,37 @@
     font-weight:500;
     padding:10px 25px;
     cursor:pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.fo-btn-text-hover{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transform: translateY(100%);
+}
+
+.fo-btn-text-main, .fo-btn-text-hover{
+    display: block;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.fo-btn:hover .fo-btn-text-main{
+    opacity:0;
+    transform: translateY(-100%);
+}
+
+.fo-btn:hover .fo-btn-text-hover{
+    opacity:1;
+    transform: translateY(0)
+}
+
+.fo-btn-text{
+    position:relative;
+    display:inline-block;
 }
 
 .fo-btn i{
@@ -15,21 +45,25 @@
     transition: all 0.3s ease-in-out;
 }
 
+
 .f-btn:hover{
     background-color:var(--text-color);
+    box-shadow: 0 0 10px var(--yellow-color);
 }
 
 .o-btn:hover{
-    background-color:var(--yellow-color);
-    color:var(--black-color) !important;
+    background-color:currentColor;
+    color:currentColor !important;
+    box-shadow: 0 0 10px currentColor;
 }
 
 .o-btn:hover i{
-    color:var(--black-color) !important;
+    color:currentColor !important;
+
 }
 
 .fo-btn:hover i{
-    transform: translateX(8px);
+    transform: translateX(8px) rotate(360deg);
 }
 
 .f-btn,.f-btn i{

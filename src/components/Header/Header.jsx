@@ -38,7 +38,7 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <Filler text = "View Menu" />
+            <Filler text = "View Menu" color="var(--black-color" />
           </div>
         </div>
       </nav>
