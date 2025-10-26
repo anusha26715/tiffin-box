@@ -1,0 +1,19 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor .box {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #0dd1c8;
+  box-shadow: 0 0 15px #0dd1c8, 0 0 50px #0dd1c8;
+  transform-origin: center 30px;
+  pointer-events: none;
+}

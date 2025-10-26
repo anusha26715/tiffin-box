@@ -13,44 +13,44 @@ const Menu = () => {
     },
     {
       id: 2,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
-      price: "$12.99",
+      name: "Grilled Chicken",
+      image: "/grilled-chicken.png",
+      price: "$17.99",
     },
     {
       id: 3,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
-      price: "$12.99",
+      name: "Meatball Pasta",
+      image: "/meatball-pasta.png",
+      price: "$22.00",
     },
     {
       id: 4,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
-      price: "$12.99",
+      name: "Grilled Steak",
+      image: "/grilled-steak.png",
+      price: "$32.50",
     },
     {
       id: 5,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
-      price: "$12.99",
+      name: "Pepperoni Pizza",
+      image: "/pizza.png",
+      price: "$5.99",
     },
     {
       id: 6,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
-      price: "$12.99",
+      name: "Rosemary Steak",
+      image: "/rosemary-steak.png",
+      price: "$10.19",
     },
     {
       id: 7,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
-      price: "$12.99",
+      name: "Meat Potato",
+      image: "/beef-potato.png",
+      price: "$22.99",
     },
     {
       id: 8,
-      name: "Chicken Tandoori",
-      image: "/dish-img.webp",
+      name: "Chicken Tikka",
+      image: "/chicken-tikka.png",
       price: "$12.99",
     },
   ];
@@ -82,7 +82,7 @@ const Menu = () => {
   };
 
   return (
-    <section className="menu-section">
+    <section className="menu-section" id="menuSection">
       <motion.div
         className="head mb-5"
         variants={headVariants}

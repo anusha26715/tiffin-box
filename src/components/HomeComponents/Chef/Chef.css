@@ -1,33 +1,41 @@
-.chef-section{
-    background-color:var(--black-color);
-    padding:50px 10%;
+.chef-section {
+  background-color: var(--black-color);
+  padding: 50px 10%;
 }
 
-.chef-text{
-    line-height:1.8;
-    font-size:18px;
-    padding:clamp(25px, 4%, 40px) 8%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+[data-theme="light"] .chef-section {
+  background: radial-gradient(
+    circle at center,
+    rgb(180, 180, 180),
+    rgb(60, 60, 60)
+  );
 }
 
-.chef-context{
-    line-height:1.5;
-    letter-spacing:2px;
-    font-size:14px;
-    margin-top:20px;
+.chef-text {
+  line-height: 1.8;
+  font-size: 18px;
+  padding: clamp(25px, 4%, 40px) 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.chef-img-container{
-    position:relative;
+.chef-context {
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-top: 20px;
 }
-.chef-name{
-    width:30%;
-    height:auto;
-    border-radius:20px;
-    object-fit:cover;
-    position:absolute;
-    right:-8%;
-    bottom:0;
+
+.chef-img-container {
+  position: relative;
+}
+.chef-name {
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  position: absolute;
+  right: -8%;
+  bottom: 0;
 }

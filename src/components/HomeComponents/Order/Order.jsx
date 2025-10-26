@@ -40,7 +40,7 @@ const Order = () => {
   };
 
   return (
-    <section className="order-section">
+    <section className="order-section" id="orderSection">
       <div className="container order-container">
         <div className="row">
           <motion.div

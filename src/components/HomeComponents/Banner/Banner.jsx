@@ -87,7 +87,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="banner-section">
+    <section className="banner-section" id="home">
       <div className="container">
         <div className="row">
           <motion.div
@@ -128,7 +128,7 @@ const Banner = () => {
             animate="visible"
           >
             <motion.img
-              src="/banner-img.png"
+              src="/banner-image.png"
               alt="Banner"
               className="img-fluid banner-img"
               whileHover={{ scale: 1.05 }}

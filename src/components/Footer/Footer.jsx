@@ -2,7 +2,7 @@ import Outline from "../HomeComponents/Button/Outline";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" id="contactSection">
             <div>
                 <img src="/logo-img.png" alt="Logo" className="footer-logo" />
             </div>
@@ -18,7 +18,7 @@ const Footer = () => {
                 <p>allerton rd, Liverpool l25 7re</p>
             </div>
             <pre className="d-flex flex-wrap">
-                <a href="menu-section">menu</a> |  <a href="order-section">order online</a> |  <a href="booking-section">book a table</a> |  <a href="about-section">about us</a> |  <a href="contact-section">contact us</a> 
+                <a href="#menuSection">menu</a> |  <a href="#orderSection">order online</a> |  <a href="#bookingSection">book a table</a> |  <a href="#aboutSection">about us</a> |  <a href="#contactSection">contact us</a> 
             </pre>
         </footer>
     )

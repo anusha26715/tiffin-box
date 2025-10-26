@@ -40,7 +40,7 @@ const Booking = () => {
   };
 
   return (
-    <section className="booking-section">
+    <section className="booking-section" id="bookingSection">
       <div className="container">
         <div className="row">
           <motion.div

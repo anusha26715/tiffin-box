@@ -113,16 +113,18 @@ const Specialities = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <img
-              src="/specialities-img.png"
-              alt="Speciality"
-              className="img-fluid mb-3"
-            />
-            <div className="speciality-mark">
-              <i className="bi bi-box-seam"></i>
-              <h5 className="sub-title m-0" style={{ color: "white" }}>
-                Our Specialities
-              </h5>
+            <div className="speciality-image-wrapper">
+              <img
+                src="/specialities-img.png"
+                alt="Speciality"
+                className="img-fluid"
+              />
+              <div className="speciality-mark">
+                <i className="bi bi-box-seam"></i>
+                <h5 className="sub-title m-0" style={{ color: "white" }}>
+                  Our Specialities
+                </h5>
+              </div>
             </div>
           </motion.div>
           <motion.div

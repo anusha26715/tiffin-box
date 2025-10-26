@@ -1,8 +1,22 @@
 .community-section {
-    background-color: var(--black-color);
-    padding: 70px 5%;
+  background-color: var(--black-color);
+  padding: 70px 5%;
+}
+
+[data-theme="light"] .community-section {
+  background: radial-gradient(
+    circle at center,
+    rgb(180, 180, 180),
+    rgb(60, 60, 60)
+  );
 }
 
 .community-img {
-    flex: 0 0 60%;
+  flex: 0 0 60%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.community-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }

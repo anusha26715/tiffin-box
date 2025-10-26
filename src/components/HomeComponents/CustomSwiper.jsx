@@ -1,11 +1,11 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-const CustomSwiper =  ({slideItems,category}) => {
+const CustomSwiper = ({ slideItems, category }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -15,55 +15,67 @@ const CustomSwiper =  ({slideItems,category}) => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       breakpoints={{
-        200: {  // mobile
+        200: {
+          // mobile
           slidesPerView: 1,
           spaceBetween: 10,
         },
-        640: {  // small tablets
+        640: {
+          // small tablets
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        1024: { // desktop
+        1024: {
+          // desktop
           slidesPerView: 3,
           spaceBetween: 30,
         },
-        1440: { // large screens
+        1440: {
+          // large screens
           slidesPerView: 4,
           spaceBetween: 40,
         },
       }}
     >
-      {category === "menu"?( slideItems.map((item) => (
-        <SwiperSlide key={item.id}>
-          <div className="menu-item">
-            <img src={item.image} alt={item.name} className="dish-image" />
-            <h3 className="dish-name">{item.name}</h3>
-            <p className="dish-price">{item.price}</p>
-          </div>
-        </SwiperSlide>
-      ))) : ((
-        slideItems.map((item) => (
-          <SwiperSlide key={item.id}>
-            <div className="testimonial-item">
-              <div className= "star-container">
-                <span className="star">⭐</span>
-                <span className="star">⭐</span>
-                <span className="star">⭐</span>
-                <span className="star">⭐</span>
-                <span className="star">⭐</span>
+      {category === "menu"
+        ? slideItems.map((item, index) => (
+            <SwiperSlide key={item.id} className="pt-2 pb-2 menu-slide">
+              <div
+                className={`menu-item ${
+                  index % 2 === 0 ? "rotate-cw" : "rotate-ccw"
+                }`}
+              >
+                <img src={item.image} alt={item.name} className="dish-image" />
+                <h3 className="dish-name">{item.name}</h3>
+                <p className="dish-price">{item.price}</p>
               </div>
-              <p className="testimonial-text">{item.text}</p>
-              <div className="testimonial-author">
-                <img src={item.image} alt={item.author} className="author-image" />
-                <div className="author-info">
-                  <h4 className="author-name">{item.author}</h4>
-                  <p className="author-timestamp">{item.timestamp}</p>
+            </SwiperSlide>
+          ))
+        : slideItems.map((item) => (
+            <SwiperSlide key={item.id} className="pt-2 pb-2">
+              <div className="testimonial-item">
+                <div className="star-container">
+                  <span className="star">⭐</span>
+                  <span className="star">⭐</span>
+                  <span className="star">⭐</span>
+                  <span className="star">⭐</span>
+                  <span className="star">⭐</span>
+                </div>
+                <p className="testimonial-text">{item.text}</p>
+                <div className="testimonial-author">
+                  <img
+                    src={item.image}
+                    alt={item.author}
+                    className="author-image"
+                  />
+                  <div className="author-info">
+                    <h4 className="author-name">{item.author}</h4>
+                    <p className="author-timestamp">{item.timestamp}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))
-      ))}
+            </SwiperSlide>
+          ))}
     </Swiper>
   );
 };

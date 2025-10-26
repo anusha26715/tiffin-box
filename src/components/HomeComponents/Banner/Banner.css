@@ -1,34 +1,57 @@
-.banner-section{
-    background-color:var(--black-color);
-    padding:70px 10%;
-    position:relative;
+.banner-section {
+  background-color: var(--black-color);
+  padding: 70px 10%;
+  position: relative;
+}
+
+[data-theme="light"] .banner-section {
+  background: radial-gradient(
+    circle at center,
+    rgb(180, 180, 180),
+    rgb(60, 60, 60)
+  );
+}
+
+.banner-img {
+  width: 75%;
+  background: linear-gradient(
+    to right,
+    var(--black-color),
+    var(--transparent-black)
+  );
+  padding: 5%;
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
-.banner-img{
-    width: 75%;
-    background:linear-gradient(to right,var(--black-color),var(--transparent-black));
-    padding:5%;
-    border-radius:50%;
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
 }
 
-.social-media-icons{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    right:5%;
+.social-media-icons i {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.social-media-icons i{
-    font-size:25px;
-    cursor:pointer;
-    transition:all 0.3s ease-in-out;
-}
-
-.social-media-icons i:hover{
-    color:var(--yellow-color);
-    transform:scale(1.1);
+.social-media-icons i:hover {
+  color: var(--yellow-color);
+  transform: scale(1.1);
 }

@@ -45,7 +45,7 @@ const About = () => {
   };
 
   return (
-    <section className="about-section">
+    <section className="about-section" id="aboutSection">
       <div className="container">
         <div className="row">
           <motion.div
